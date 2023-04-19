@@ -5,6 +5,8 @@ import c21376161.*;
 import c21344786.*;
 import c21427252.*;
 
+
+
 public class MyVisual extends Visual
 {    
     WaveForm wf;
@@ -44,7 +46,7 @@ public class MyVisual extends Visual
         wf = new WaveForm(this);
         abv = new AudioBandsVisual(this);
 
-        dima = new Dima(this);
+        //dima = new Dima(this);
         darren = new Darren(this);
     }
 

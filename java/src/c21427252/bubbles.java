@@ -3,6 +3,13 @@ package c21427252;
 import processing.core.PApplet;
 import processing.core.PVector;
 
+// Music Stuff
+import ddf.minim.AudioBuffer;
+import ddf.minim.AudioInput;
+import ddf.minim.AudioPlayer;
+import ddf.minim.Minim;
+import processing.core.PApplet;
+
 public class bubbles 
 {
     bubble bob[];
@@ -11,6 +18,33 @@ public class bubbles
     private PApplet p;
     private int size = 72;
     private PVector pos;
+
+    //
+    Minim minim;
+    AudioPlayer ap;
+    AudioInput ai;
+    AudioBuffer ab;
+
+    int mode = 0;
+
+    float y = 0;
+    float smoothedY = 0;
+    float smoothedAmplitude = 0;
+    
+    public void keyPressed() 
+    {
+		if (key >= '0' && key <= '9') {
+			mode = key - '0';
+		}
+		if (keyCode == ' ') {
+            if (ap.isPlaying()) {
+                ap.pause();
+            } else {
+                ap.rewind();
+                ap.play();
+            }
+        }
+	}
     
    
     public bubbles(float width, float height, PApplet p)
