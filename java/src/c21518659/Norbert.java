@@ -5,8 +5,10 @@ import processing.core.PApplet;
 
 public class Norbert extends PApplet
 {
-    public void Norbert()
+    MyVisual mv;
+
+    public Norbert(MyVisual mv)
     {
-        
+        this.mv = mv;
     }
 }
