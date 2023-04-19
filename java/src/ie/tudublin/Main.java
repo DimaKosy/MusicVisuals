@@ -1,8 +1,6 @@
 package ie.tudublin;
 
-import example.CubeVisual;
 import example.MyVisual;
-import example.RotatingAudioBands;
 
 public class Main
 {	
@@ -17,6 +15,6 @@ public class Main
 	{
 		System.out.println("Hello Darren, music start!");
 		Main main = new Main();
-		main.startUI();			
+		main.startUI();
 	}
 }
