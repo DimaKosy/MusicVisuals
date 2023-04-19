@@ -15,7 +15,7 @@ public class Main
 
 	public static void main(String[] args)
 	{
-		System.out.println("Hello Darren");
+		System.out.println("Hello Darren, music start!");
 		Main main = new Main();
 		main.startUI();			
 	}
