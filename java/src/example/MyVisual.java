@@ -3,6 +3,7 @@ package example;
 import ie.tudublin.*;
 import c21376161.*;
 import c21344786.*;
+import c21518659.*;
 
 public class MyVisual extends Visual
 {    
@@ -11,6 +12,7 @@ public class MyVisual extends Visual
 
     float position;
     Dima dima;
+    Norbert norbert;
     int i = 0;
 
     public void settings()
@@ -42,6 +44,7 @@ public class MyVisual extends Visual
         abv = new AudioBandsVisual(this);
 
         dima = new Dima(this);
+        norbert = new Norbert(this);
     }
 
     public void keyPressed()
