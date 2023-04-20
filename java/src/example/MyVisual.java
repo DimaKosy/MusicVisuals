@@ -34,7 +34,7 @@ public class MyVisual extends Visual
         startMinim();
                 
         // Call loadAudio to load an audio file to process 
-        loadAudio("Moby Duck.mp3");   
+        loadAudio("MobyDuck.wav");   
 
         
         // Call this instead to read audio from the microphone
@@ -58,7 +58,6 @@ public class MyVisual extends Visual
 
     public void draw()
     {
-        background(0, 30);
         try
         {
             // Call this if you want to use FFT data
@@ -75,20 +74,11 @@ public class MyVisual extends Visual
         calculateAverageAmplitude();        
         //wf.render();
         //abv.render();
-        fill(0,255,255,255);
-        rect(i + 10,10,10,10);
+    
         position = map(getAudioPlayer().position(), 0, getAudioPlayer().length(), 0, 100);
-        if(position < 10){
-            dima.Visual(0);
-        }
-        else if(position < 20){
-            dima.Visual(1);
-        }
-        else{
-            dima.Visual(2);
-        }
 
-        i+= 20;
-        i%=width;
+        background(0);
+        
+        norbert.visual();
     }
 }

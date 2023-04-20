@@ -6,10 +6,10 @@ public class Character
 {
     MyVisual mv;
     char c;
-    int x;
-    int y;
+    float x;
+    float y;
 
-    public Character(MyVisual mv, char c, int x, int y)
+    public Character(MyVisual mv, char c, float x, float y)
     {
         this.mv = mv;
         this.c = c;
