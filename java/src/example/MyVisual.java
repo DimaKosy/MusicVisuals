@@ -20,10 +20,10 @@ public class MyVisual extends Visual
         //size(1024, 500,P3D);
         
         // Use this to make fullscreen
-        //fullScreen();
+        fullScreen();
 
         // Use this to make fullscreen and use P3D for 3D graphics
-        fullScreen(P3D, SPAN); 
+        //fullScreen(P3D, SPAN); 
         smooth();
     }
 
@@ -43,7 +43,7 @@ public class MyVisual extends Visual
         wf = new WaveForm(this);
         abv = new AudioBandsVisual(this);
 
-        dima = new Dima(this);
+        //dima = new Dima(this);
         norbert = new Norbert(this);
     }
 

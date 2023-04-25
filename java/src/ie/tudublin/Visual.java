@@ -63,7 +63,6 @@ public abstract class Visual extends PApplet
 		smothedAmplitude = PApplet.lerp(smothedAmplitude, amplitude, 0.1f);
 	}
 
-
 	protected void calculateFrequencyBands() {
 		for (int i = 0; i < bands.length; i++) {
 			int start = (int) pow(2, i) - 1;

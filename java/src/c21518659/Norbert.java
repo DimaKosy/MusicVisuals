@@ -11,6 +11,7 @@ public class Norbert
     MyVisual mv;
     ArrayList<LyricLine> lyrics;
     String[] lines;
+    float amp;
 
     public Norbert(MyVisual mv)
     {
@@ -62,7 +63,8 @@ public class Norbert
                     c.x -= 5;
                     mv.fill(255);
                     mv.textSize(32);
-                    mv.text(c.c, c.x, c.y + PApplet.sin(PApplet.radians(c.x)) * mv.height / 45);
+                    amp = mv.getSmoothedAmplitude() * 300;
+                    mv.text(c.c, c.x, c.y + PApplet.sin(PApplet.radians(c.x)) * amp);
 
                 }
             }
