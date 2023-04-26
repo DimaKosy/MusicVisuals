@@ -50,20 +50,22 @@ public class Norbert
 
             if(mv.getAudioPlayer().position() >= lyricLine.timestamp)
             {
+                amp = mv.getSmoothedAmplitude() * 300;
+            
                 for(int j = 0; j < lyricLine.line.size(); j++)
                 {
                     Character c = lyricLine.line.get(j);
                     
+
                     if(j > 0)
                     {
                         Character prev = lyricLine.line.get(j - 1);
                         c.x = prev.x + mv.textWidth(prev.c) * 1.3f;
                     }
                     
-                    c.x -= 5;
+                    c.x -= 6.0f;
                     mv.fill(255);
                     mv.textSize(32);
-                    amp = mv.getSmoothedAmplitude() * 300;
                     mv.text(c.c, c.x, c.y + PApplet.sin(PApplet.radians(c.x)) * amp);
 
                 }
