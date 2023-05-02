@@ -28,6 +28,12 @@ Video Demonstration:
 
 # How It Works
 
+## File Structure
+
+## Audio-To-Visual Analysis
+
+## Playback Control
+
 # What We Are Most Proud Of In The Project
 
 # Markdown Tutorial
