@@ -483,6 +483,7 @@ All of our assets were stored inside a data folder.
 All of our asset files are contained within the data folder
 
 ## Playback Control
+We map getAudioPlayer.position between 0 and the song lenght in ms, this allows us to turn it map it between 0 and 100 so that we can split the song easier
 ``` Java
 position = map(getAudioPlayer().position(), 0, getAudioPlayer().length(), 0, 100);
 
