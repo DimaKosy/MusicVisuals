@@ -1,5 +1,7 @@
 # Music Visualiser Project
 
+[![YouTube](https://i.ytimg.com/vi/COJVn6kwEO0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBEgcigxMA8=&rs=AOn4CLAHZKIKf9K6LVqRE-1SGsLdISzUow)](https://youtu.be/COJVn6kwEO0)
+
 ## Project Members
 - C21376161 Dmytro Kosynskyy
 - C21344786 Shawn Lorenzo
