@@ -151,6 +151,22 @@ It should be noted that the sailor from the song was likely from the 1800's, so 
 My visual is a wave of lyrics that changes height with the amplitude of the song. To make this, I used three classes:
 
 #### Norbert
+- Primary drawing class
+- Handles all logic in this visual
+
+#### Character
+- Stores the display character as a char data type
+- Also stores the x and y values as floats
+
+#### LyricLine
+- Stores lyric line as an array list of Character objects
+- Also stores the timestamp for the song
+
+I created an array list of LyricLine objects in the Norbert class. I then parsed the lyrics as a text file in the format <timestamp in milliseconds> <lyric> split this into two parts. I stored the timestamps into the timestamp variables in the LyricLine objects. Then I split the line of lyrics into individual characters and stored the characters into the array list of Character objects in the LyricLine object
+I then use an if statement to check the position of the audio player. If the position of the player is equal to the timestamp, the corresponding line of lyrics is displayed on the right side of the screen.
+The lyric line is displayed character by character using the text() function adding sin(radians(x) * amplitude to the y. The wave is multiplied by the amplitude to get the desired effect of the height of the wave changing.
+I also add an offset to the x of every character after the first. This is done by using an if statement to check if the index is greater than 0. If this is the case I assign current x to be the previous x plus the width of the previous character.
+Right before the text is displayed, I decrement the x by 6.0f so that the line of lyrics scrolls towards the left of the screen.
 
 ### Darren
 
