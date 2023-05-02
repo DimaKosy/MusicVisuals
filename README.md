@@ -482,8 +482,6 @@ All of our assets were stored inside a data folder.
 
 All of our asset files are contained within the data folder
 
-## Audio-To-Visual Analysis
-
 ## Playback Control
 ``` Java
 position = map(getAudioPlayer().position(), 0, getAudioPlayer().length(), 0, 100);
