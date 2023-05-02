@@ -148,6 +148,21 @@ public void modWave(float scale)
 
 To create an animation for a scanning line for the radar, it involved passing in a frameCount value from MyVisual to constantly generate it while the visual is shown:
 
+``` Java
+// Radar scanning method
+public void scan(float frame, float speed)
+{
+	scanX = shapeX+(shapeR/2)*MyVisual.cos(MyVisual.radians(frame*speed));
+	scanY = shapeY+(shapeR/2)*MyVisual.sin(MyVisual.radians(frame*speed));
+
+	mv.stroke(0, 255, 0); // Change colour here
+	mv.strokeWeight(6);
+	mv.line(shapeX, shapeY, scanX, scanY);
+}
+```
+
+However, this meant that when testing for a RadarContact class (not included in the final code), it kept generating a single contact every frame with or without the line (which had intersect detection) touching it. Proving to be a debugging nightmare, it was replaced by a compass arrow that indicates the suspected direction of the duck.
+
 While the current positions of the displays are fixed for the project, they could be rearranged in any alignment through code similar to this:
 
 ``` Java
