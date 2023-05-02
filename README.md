@@ -35,7 +35,7 @@ Video Demonstration:
 ### Shawn
 ### Norbert
 
-![Lyric Wave](image.png)
+![Lyric Wave](images/j1.png)
 ### Darren
 ### Domas
 
