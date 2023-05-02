@@ -473,7 +473,7 @@ public void visual()
 }
 ```
 
-For this implementation, we decided which person's visual is on-screen with an if statement. *See Playback Control*
+For this implementation, we decided which person's visual is on-screen with an if statement. *See Playback Control for details*
 
 
 ## File Structure
