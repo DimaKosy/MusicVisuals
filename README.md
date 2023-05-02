@@ -18,9 +18,9 @@ Created by:
 
 # Instructions
 
-# How it works
+# How It Works
 
-# What we are most proud of in the assignment
+# What We Are Most Proud Of In The Assignment
 
 # Markdown Tutorial
 
