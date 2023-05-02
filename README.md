@@ -36,9 +36,11 @@ Video Demonstration:
 ![Duck Scale](images/j2.png)
 
 ![Duck Battle](images/j4.png)
+
 ### Shawn
 
 ![Planning Chart](images/j3.png)
+
 ### Norbert
 
 ![Lyric Wave](images/j1.png)
@@ -46,7 +48,10 @@ Video Demonstration:
 ### Darren
 
 ![Bubbles](images/j5.png)
+
 ### Domas
+
+![Bars](images/j6.png)
 
 # How It Works
 
