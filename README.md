@@ -49,7 +49,7 @@ Taking inspiration from the general nautical theme of the song, I created a visu
 
 Audio data was being processed through the MyVisual/Visual class, which uses the Java Minim audio processing library. This was then modified to create certain wave amplitude behaviour such as:
 
-```
+``` Java
 // Wave visualisation method (with scaling/lerp functions)
 public void modWave(float scale)
 {
@@ -75,13 +75,15 @@ public void modWave(float scale)
 }
 ```
 
+...where 'scale' is a scaling factored applied to the lerped y-values for the AudioBuffer.
+
 While the current positions of the displays are fixed for the project, they could be rearranged in any alignment through code similar to this:
 
-```
+``` Java
 sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadband Sonar", shapeH/42, "Hz", 0);
 ```
 
-where the final parameter '0' indicates that the display should be left-centre aligned to the chart.
+...where the final parameter '0' indicates that the display should be left-centre aligned to the chart.
 
 ### Norbert
 
