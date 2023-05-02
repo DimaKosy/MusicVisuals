@@ -437,7 +437,7 @@ Neat things I learned doing this visual are the use of subclasses, the use of ar
 
 ![Bars](images/j6.png)
 
-# How It Works
+# How It Works Generally
 All our code is ran through the main and MyVisual that was provided with the skeleton code. We are using the functions that were already implemented and building ontop of them.
 
 Each persons code is ran through a visual function in their main class. This allows for consitancy in our code.
