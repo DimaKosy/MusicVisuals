@@ -271,8 +271,18 @@ for(int i = 0; i < lyrics.size(); i++)
 ![Bars](images/j6.png)
 
 # How It Works
+All our code is ran through the main and MyVisual that was provided with the skeleton code. We are using the functions that were already implemented and building ontop of them.
+
+Each persons code is ran through a visual function in their main class. This allows for consitancy in our code.
+We decide which persons visual is playing with an if statement.
+See Visual representation for info on how each member did their code
+
 
 ## File Structure
+Each member created a package for themself, inside of which we had our own code.
+All of our assets were stored inside a data folder.
+
+All of our asset files are contained within the data folder
 
 ## Audio-To-Visual Analysis
 
