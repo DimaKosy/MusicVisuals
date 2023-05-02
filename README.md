@@ -198,8 +198,6 @@ public class LyricLine
 ```
 
 I created an array list of LyricLine objects in the Norbert class. I then parsed the lyrics as a text file in the format <timestamp in milliseconds> <lyric> split this into two parts.
-
-
 I stored the timestamps into the timestamp variables in the LyricLine objects. Then I split the line of lyrics into individual characters and stored the characters into the array list of Character objects in the LyricLine object.
 ``` Java
 for(int i = 0; i < lines.length; i++)
