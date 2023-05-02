@@ -146,6 +146,8 @@ public void modWave(float scale)
 
 ...where 'scale' is a scaling factored applied to the lerped y-values for the AudioBuffer.
 
+To create an animation for a scanning line for the radar, it involved passing in a frameCount value from MyVisual to constantly generate it while the visual is shown:
+
 While the current positions of the displays are fixed for the project, they could be rearranged in any alignment through code similar to this:
 
 ``` Java
