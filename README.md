@@ -97,7 +97,7 @@ void JoinWaveVerts(Wave w1) {
 }
 ```
 
-### Shawn
+### Shawn: What's Out There?
 
 ![Planning Chart](images/j3.png)
 Taking inspiration from the general nautical theme of the song, I created a visual that represents how sailors would get their data on the high seas. It features 4 distinct elements:
@@ -147,7 +147,7 @@ sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadban
 
 It should be noted that the sailor from the song was likely from the 1800's, so he probably didn't have access to these tools to find pirates, let alone a giant duck!
 
-### Norbert
+### Norbert: Lively Lyrics
 
 ![Lyric Wave](images/j1.png)
 My visual is a wave of lyrics that changes height with the amplitude of the song. To make this, I used three classes:
