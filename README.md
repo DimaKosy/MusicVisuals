@@ -32,11 +32,20 @@ Video Demonstration:
 ## Visual Representations
 
 ### Dmytro
+
+![Duck Scale](images/j2.png)
+
+![Duck Battle](images/j4.png)
 ### Shawn
+
+![Planning Chart](images/j3.png)
 ### Norbert
 
 ![Lyric Wave](images/j1.png)
+
 ### Darren
+
+![Bubbles](images/j5.png)
 ### Domas
 
 # How It Works
