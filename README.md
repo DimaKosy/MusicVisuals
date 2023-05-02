@@ -277,6 +277,141 @@ Throughout the project, I learned how to parse files (in Java), manipulate strin
 ### Darren: Growing Bubbles
 
 ![Bubbles](images/j5.png)
+For my visual, I wanted to create a scene where bubbles would spawn from the edges of the screen. They would then bounce around the screen while a 3D wave inspired from my labwork would interact with these and the music.
+
+In order to create the bubbles, I defined a Bubble class that represents one bubble and a Bubbles class that creates an array of them. Then, I set a random x and y vector position for each bubble when the visual loads, as well as which side of the display they will spawn from.
+
+``` Java
+// Initalsing bubble array
+bob = new bubble[size];
+
+// This for loop deides on which side of the screen the bubble will spawn by dividing the array size by modulos of 4 
+for(int i = 0; i < size; i++)
+{
+	float x = 0, y = 0; 
+	switch (i%4) 
+	{
+		case 0:
+		//left
+			x = p.random(0,width);
+			y = p.random(0, height);
+			break;
+		case 1:
+		//right
+			x = p.random(0,width);
+			y = p.random(0, height);
+
+			break;
+		case 2:
+		//bottom
+			x = p.random(0, width);
+			y = p.random(0,height);
+			break;
+		case 3:
+		//top
+			x = p.random(0, width);
+			y = p.random(0, height);
+
+			break;
+				
+	
+		default:
+			break;
+	}
+		
+	pos = new PVector(x,y);
+	bob[i] = new bubble(pos,p);
+}
+```
+
+I added certain mechanics when the bubbles touch the screen border. First, it would reduce the bubble's health by 1 in order to 'pop' after a set amount of screen bounces and set the movement speed of the bubbles
+
+``` Java
+public void update()
+{
+	// This set of If statements prevents the balls from leaving the screen border 
+	// Change DIRX *= 1.15 1.05 1.5 1.25 these all either slow it down or speed it up 
+	
+	if(pos.x > p.width)
+	{
+		DirX *= -1.1;
+		lives--; 
+	}
+	
+	if(pos.x < 0) 
+	{
+		DirX *= -1.1;
+		lives--;
+	}
+
+	if(pos.y > p.height)
+	{
+		DirY *= -1.1;
+		lives--;
+	}
+	
+	if(pos.y < 0) 
+	{
+		DirY *= -1.1;
+		lives--;
+	}
+
+	pos.x += DirX;
+	pos.y += DirY;
+	
+	if (lives > 0)
+	{
+		Tail();
+		
+	}
+	lives = 10;
+}
+```
+
+After a set amount of bounces, a tail would start to grow behind the bubble. This pattern of movement will continue while the visual is shown onto the display.
+
+``` Java
+// grows the tail of the circles after the bounce enough times
+public void Tail() 
+{
+	//if a bubbles life = > 3 leave an explosion at current location
+	p.rect(pos.x, pos.y, DirX, DirY);
+	lives = 10;
+}
+```
+
+For the 3D wave, I lerped the coordinates of a set of rectangles by the AudioBuffer size from the audio file. By doing this, it creates an illusion of an oblique wave responsing to the wave, which I thought was cool!
+
+``` Java
+public void render() 
+    {
+        vis.colorMode(PApplet.HSB);
+        for (int i = 0; i < vis.getAudioBuffer().size(); i++) {
+            // setting the stroke to the rectangle using map
+            vis.stroke(
+                    PApplet.map(i, 0, vis.getAudioBuffer().size(), 0, 255), 255, 255);
+
+            // Setting the lurp variables
+            lerpedBuffer[i] = vis.lerp(lerpedBuffer[i], 350 * vis.getAudioBuffer().get(i), 0.12f);
+
+            vis.fill(
+                    PApplet.map(i, 0, vis.getAudioBuffer().size(), 0, 255), 215, 255
+
+            );
+            vis.rect(width * ((float) i / (float) vis.getAudioBuffer().size()), cy - lerpedBuffer[i],
+                    90 * width / vis.getAudioBuffer().size(), lerpedBuffer[i]);
+            
+
+            // Comment out the below to get rif of 
+            vis.rect(halfW - lerpedBuffer[i]/2, halfH, lerpedBuffer[i],height );
+
+        }
+    }
+```
+
+Overall, I was very proud of my bubbles. I enjoyed working on them as I got to understand movement mechanics for an object. I was also proud of the bubble's tail, as they were originally meant to be explosive bubbles; however I liked the growing effect a bit more than an explosion! I could've improved the bounce movement of the bubbles from the current implementation by increasing the DIRX value to say, 1.15 for the video. The 3D wave was also cool to see as opposed to a more normal wave.
+
+Neat things I learned doing this visual is the use of subclasses, the use of arrays to store more than one instance of an object and experimenting with vector movement.
 
 ### Domas: Acoustic Bars
 
