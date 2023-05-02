@@ -85,6 +85,8 @@ sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadban
 
 ...where the final parameter '0' indicates that the display should be left-centre aligned to the chart.
 
+It should be noted that the sailor from the song was likely from the 1800's, so he probably didn't have access to these tools to find pirates, let alone a giant duck!
+
 ### Norbert
 
 ![Lyric Wave](images/j1.png)
