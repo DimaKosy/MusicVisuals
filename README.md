@@ -157,12 +157,47 @@ My visual is a wave of lyrics that changes height with the amplitude of the song
 #### Character
 - Stores the display character as a char data type
 - Also stores the x and y values as floats
+``` Java
+public class Character
+{
+    MyVisual mv;
+    char c;
+    float x;
+    float y;
+
+    public Character(MyVisual mv, char c, float x, float y)
+    {
+        this.mv = mv;
+        this.c = c;
+        this.x = x;
+        this.y = y;
+
+    }
+}
+```
 
 #### LyricLine
 - Stores lyric line as an array list of Character objects
 - Also stores the timestamp for the song
+``` Java
+public class LyricLine
+{
+    MyVisual mv;
+    ArrayList<Character> line = new ArrayList<Character>();
+    int timestamp;
+
+    public LyricLine(MyVisual mv, ArrayList<Character> line, int timestamp)
+    {
+        this.mv = mv;
+        this.line = line;
+        this.timestamp = timestamp;
+    }
+}
+```
 
 I created an array list of LyricLine objects in the Norbert class. I then parsed the lyrics as a text file in the format <timestamp in milliseconds> <lyric> split this into two parts.
+``` Java
+
 
 I stored the timestamps into the timestamp variables in the LyricLine objects. Then I split the line of lyrics into individual characters and stored the characters into the array list of Character objects in the LyricLine object
 
