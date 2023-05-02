@@ -47,7 +47,7 @@ Taking inspiration from the general nautical theme of the song, I created a visu
 - A radar screen with an estimated location of ducks from the sonar
 - A radio transmission set to check how the sailor's communications are holding
 
-Audio data was being processed through the MyVisual/Visual class, which uses the Java Minim audio processing library. This was then modified to create certain wave amplitude behaviour such as:
+Audio data was being processed through the MyVisual/Visual class, which uses the Java Minim audio processing library. This was then modified to create certain wave amplitude behaviour for the sonar, such as:
 
 ``` Java
 // Wave visualisation method (with scaling/lerp functions)
