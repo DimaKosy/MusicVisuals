@@ -36,6 +36,12 @@ Video Demonstration:
 
 # What We Are Most Proud Of In The Project
 
+### Dmytro
+### Shawn
+### Norbert
+### Darren
+### Domas
+
 # Markdown Tutorial
 
 This is *emphasis*
