@@ -150,6 +150,8 @@ It should be noted that the sailor from the song was likely from the 1800's, so 
 ![Lyric Wave](images/j1.png)
 My visual is a wave of lyrics that changes height with the amplitude of the song. To make this, I used three classes:
 
+#### Norbert
+
 ### Darren
 
 ![Bubbles](images/j5.png)
