@@ -438,11 +438,42 @@ Neat things I learned doing this visual are the use of subclasses, the use of ar
 ![Bars](images/j6.png)
 
 # How It Works Generally
-All our code is ran through the main and MyVisual that was provided with the skeleton code. We are using the functions that were already implemented and building ontop of them.
+All our code is ran through the MyVisual class that was provided with the skeleton code. We are using the functions that were already implemented from the Visual class and building on top of them.
 
-Each persons code is ran through a visual function in their main class. This allows for consitancy in our code.
-We decide which persons visual is playing with an if statement.
-See Visual representation for info on how each member did their code
+Each person's code is ran through some sort of 'visual' function in their main class. This allows for consistency in our code.
+
+``` Java
+// Example visual() method from Shawn's visualiser
+public void visual()
+{
+	shapeG = 30;
+
+	shapeW = board1.getWidth()-shapeG;
+	shapeH = board1.getHeight()-shapeG;
+
+	board1.screen(shapeG, 20, "Info On The Duck?", shapeH/16);
+	
+	//sonar1.rawWave();
+	sonar1.modWave(0.35f);
+	sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadband Sonar", shapeH/42, "Hz", 0);
+
+	sonar2.rawWave();
+	sonar2.modWave(1.25f);
+	sonar2.screen(shapeW, (shapeH/2)+(shapeH/5), shapeW/2.5f, shapeH/6, 13, "Narrowband Sonar", shapeH/42, "KHz", 0);
+
+	gauge1.screen(shapeW, (shapeH/2)-(shapeH/16), shapeW/2.5f, shapeH/6, "Radio Transmissions", shapeH/42, 0);
+	gauge1.scan(mv.frameCount, mv.getAmplitude()/16, 0);
+	gauge1.scanScreen("\"To The Ol' Rust Bucket!\"", shapeH/8, 0);
+	gauge1.scan(mv.frameCount, mv.getSmoothedAmplitude()/10, 1);
+	gauge1.scanScreen("\"To Me Hearties!\"", shapeH/8, 1);
+
+	radar1.project(mv.frameCount, mv.getSmoothedAmplitude()/4);
+	radar1.scan(mv.frameCount, 1.5f);
+	radar1.screen(shapeW, shapeH*11/20, shapeH/1.55f, 6, 24, "Long-Range Radar", shapeH/36, 2);
+}
+```
+
+For this implementation, we decided which person's visual is on-screen with an if statement. *See Playback Control*
 
 
 ## File Structure
