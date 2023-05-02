@@ -37,6 +37,35 @@ Video Demonstration:
 
 ![Duck Battle](images/j4.png)
 
+I made two visuals for this project, one is a simple circle of rotating ducks which respond to the frequency bands. It is based off the cubes example shown in class.
+
+```Java
+	for(int i = 0; i < DuckScaler.length; i++){
+            DuckScaler[i] = PApplet.map(mv.getSmoothedBands()[i],0,200,0.5f,3);
+        }
+```
+
+The second visual creates an array of points. These points go from right to left at a set pace, their height is set by the average frequency bands value which is then multiplied by a sin() function and lerped.
+```Java
+	float BufferAvg(){
+		float Avg;
+		Avg = 0;
+		for(int i = 0 ; i < mv.getBands().length ; i ++){
+		    Avg += mv.getSmoothedBands()[i];
+		}
+
+		return (Avg/mv.getBands().length) *  0.3f;
+    	}
+```
+
+```Java
+	if(p2 < p1){
+		points[(i + ((Move < 0)?0:1))%AmtPoints] = PApplet.lerp(points[(i + ((Move < 0)?1:0))%AmtPoints],(float)Math.sin(i*0.1)*ToLerp,0.5f);
+		continue;
+    	}
+```
+
+
 ### Shawn
 
 ![Planning Chart](images/j3.png)
