@@ -262,11 +262,11 @@ for(int i = 0; i < lyrics.size(); i++)
 }
 ```
 	
-### Darren
+### Darren: Growing Bubbles
 
 ![Bubbles](images/j5.png)
 
-### Domas
+### Domas: Acoustic Bars
 
 ![Bars](images/j6.png)
 
