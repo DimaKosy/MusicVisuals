@@ -537,9 +537,9 @@ All of our assets were stored inside a data folder.
 
 All of our asset files are contained within the data folder
 
-##List of Classes/assets
+### List of classes/assets
 
-| Class/asset| Source|
+| Class/Asset| Source|
 |-----------|-----------|
 |Dima | Self written |
 |Bobber | Self written |
@@ -565,8 +565,6 @@ All of our asset files are contained within the data folder
 | MobyDuck.txt| Online |
 | duck.obj| [Online](https://free3d.com/3d-model/rubber-duck-v1--614347.html) |
 
-	
-	
 ## Playback Control
 We map getAudioPlayer.position between 0 and the song lenght in ms, this allows us to turn it map it between 0 and 100 so that we can split the song easier
 ``` Java
