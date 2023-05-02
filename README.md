@@ -32,7 +32,7 @@ Video Demonstration:
 While I (Dmytro) was searching for a song for our project, I got confronted by a flock of ducks. They wouldn't scatter quickly enough so I waved my foot across them and scared them off!
 Then I had an idea...
 
-Sea shanties were always funny to me and one of the most memorable ones when I saw those ducks was this hit by The Longest Johns. It depicts a long-retired sailor, whose solitude was interrupted by a mythical, giant duck on his lake. He then goes to settle the score with the duck with the help of his ol' mates, and after a long, well-fought battle, they celebrated with a banquet of BBQed duck, pancakes and oyster sauce!
+Sea shanties were always cool to me and one of the most memorable ones when I saw those ducks was this hit by The Longest Johns. It depicts a long-retired sailor, whose solitude was interrupted by a mythical, giant duck on his lake. He then goes to settle the score with the duck with the help of his ol' mates, and after a long, well-fought battle, they celebrated with a banquet of BBQed duck, pancakes and oyster sauce!
 
 ## Visual Representations
 
@@ -54,7 +54,7 @@ The second visual creates an array of points. These points go from right to left
 float BufferAvg() {
 	float Avg;
 	Avg = 0;
-	for(int i = 0 ; i < mv.getBands().length ; i ++){
+	for(int i = 0 ; i < mv.getBands().length ; i ++) {
 		Avg += mv.getSmoothedBands()[i];
 	}
 
