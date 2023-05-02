@@ -40,6 +40,7 @@ Video Demonstration:
 ### Shawn
 
 ![Planning Chart](images/j3.png)
+Taking inspiration from the general nautical theme of the song, I created a visual that represents how sailors would get their data on the high seas.
 
 ### Norbert
 
