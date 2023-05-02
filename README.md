@@ -25,6 +25,8 @@ Video Demonstration:
 - It should represent the chosen song's theme, narrative, mood, tempo and/or structure
 - Showcase teamwork, creativity, technical skills and communication through tools such as GitHub for project management
 
+## The Song: Moby Duck (The Longest Johns)
+
 # How It Works
 
 ## File Structure
