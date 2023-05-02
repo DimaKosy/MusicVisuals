@@ -278,14 +278,6 @@ for(int i = 0; i < lyrics.size(); i++)
 
 ## Playback Control
 
-# What We Are Most Proud Of
-
-### Dmytro
-### Shawn
-### Norbert
-### Darren
-### Domas
-
 # Markdown Tutorial
 
 This is *emphasis*
