@@ -34,15 +34,11 @@ Then I had an idea...
 
 Sea shanties were always funny to me and one of the most memorable ones when I saw those ducks was this hit by The Longest Johns. It depicts a long-retired sailor, whose solitude was interrupted by a mythical, giant duck on his lake. He then goes to settle the score with the duck with the help of his ol' mates, and after a long, well-fought battle, they celebrated with a banquet of BBQed duck, pancakes and oyster sauce!
 
-
 ## Visual Representations
 
 ### Dmytro
 
 ![Duck Scale](images/j2.png)
-
-![Duck Battle](images/j4.png)
-
 I made two visuals for this project, one is a simple circle of rotating ducks which respond to the frequency bands. It is based off the cubes example shown in class.
 
 ```Java
@@ -51,6 +47,7 @@ I made two visuals for this project, one is a simple circle of rotating ducks wh
         }
 ```
 
+![Duck Battle](images/j4.png)
 The second visual creates an array of points. These points go from right to left at a set pace, their height is set by the average frequency bands value which is then multiplied by a sin() function and lerped.
 ```Java
 	float BufferAvg(){
