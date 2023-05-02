@@ -28,6 +28,7 @@ Video Demonstration:
 ## The Song: Moby Duck (The Longest Johns)
 
 [![YouTube](https://i.ytimg.com/vi/xA7e_dxDOCo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuQlaJv-4ykUREOM2cqb-ALwUR2w)](https://youtu.be/xA7e_dxDOCo)
+
 While I (Dmytro) was searching for a song for our project, I got confronted by a flock of ducks. They wouldn't scatter quickly enough so I waved my foot across them and scared them off!
 Then I had an idea...
 
