@@ -1,10 +1,13 @@
 # Music Visualiser Project
 
-Name:
+Created by:
+1. C21376161 Dmytro Kosynskyy
+1. C21344786 Shawn Lorenzo
+1. C21518659 Norbert Krupa
+1. C21427252 Darren Grants
+1. C21321073 Domas Mockus
 
-Student Number: 
-
-## Instructions
+## Project Instructions
 - Fork this repository and use it a starter project for your assignment
 - Create a new package named your student number and put all your code in this package.
 - You should start by creating a subclass of ie.tudublin.Visual
