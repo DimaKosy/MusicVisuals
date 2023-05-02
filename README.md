@@ -20,7 +20,7 @@
 - To start the visual demonstration: press the spacebar (space key) once
 - To restart: press the spacebar again
 
-*The scenes automatically changes during playback*
+*The scenes automatically changes during playback (see 'How It Works')*
 
 # How It Works
 
