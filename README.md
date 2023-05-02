@@ -173,6 +173,10 @@ sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadban
 
 It should be noted that the sailor from the song was likely from the 1800's, so he probably didn't have access to these tools to find pirates, let alone a giant duck!
 
+For me, I was proud that all the elements are working as intended; this is given the fact that there were a total of 7 elements reacting to either the audio or the display frame rate. I felt satisfaction when the radar screen was first implemented and saw that line rotate without any traces from my experimentation with it. It was unfortunate that a radar contact could not be implemented, but it is an improvement that could be later explored in a code refactor.
+
+Through working with this visual, I further understood the heirarchies that exist in Object-Oriented Programming, how different classes interact with each other to perform tasks and learned a thing or two on how to design a visual that can scale to different screens (Dmytro can fill in the details when first merging my visual to the master branch!)
+
 ### Norbert: Lively Lyrics
 
 ![Lyric Wave](images/j1.png)
