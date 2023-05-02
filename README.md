@@ -4,6 +4,12 @@ Video Demonstration:
 
 [![YouTube](https://i.ytimg.com/vi/COJVn6kwEO0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBEgcigxMA8=&rs=AOn4CLAHZKIKf9K6LVqRE-1SGsLdISzUow)](https://youtu.be/COJVn6kwEO0)
 
+## Playback Instructions
+- To start the visual demonstration: press the spacebar (space key) once
+- To restart: press the spacebar again
+
+*The scenes automatically changes during playback (see 'How It Works')*
+
 ## Project Members
 - C21376161 Dmytro Kosynskyy
 - C21344786 Shawn Lorenzo
@@ -11,7 +17,7 @@ Video Demonstration:
 - C21427252 Darren Grants
 - C21321073 Domas Mockus
 
-## Project Instructions
+## Project Brief
 - Fork this repository and use it a starter project for your assignment
 - Create a new package named your student number and put all your code in this package.
 - You should start by creating a subclass of ie.tudublin.Visual
@@ -19,12 +25,6 @@ Video Demonstration:
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
 # Description Of The Project
-
-# Instructions
-- To start the visual demonstration: press the spacebar (space key) once
-- To restart: press the spacebar again
-
-*The scenes automatically changes during playback (see 'How It Works')*
 
 # How It Works
 
