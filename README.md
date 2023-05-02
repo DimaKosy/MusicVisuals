@@ -485,6 +485,41 @@ All of our asset files are contained within the data folder
 ## Audio-To-Visual Analysis
 
 ## Playback Control
+``` Java
+position = map(getAudioPlayer().position(), 0, getAudioPlayer().length(), 0, 100);
+
+background(0);
+
+if(position <= 20) {
+	background(0);
+	norbert.visual();   
+}
+
+if(position >= 20 && position <= 30) {
+	dima.Visual(2);
+}
+
+if(position >= 30 && position <= 40) {    
+	dima.Visual(0); 
+}
+
+if(position >= 40 && position <= 60) {
+	colorMode(RGB);
+	shawn.visual();
+}
+
+if(position >= 60 && position <= 80) {
+	float r;
+	r = random(20, 50);
+	fill(0,0,0,r);
+	rect(0, 0, width, height);
+	darren.render();
+}
+
+if(position >= 80 && position <= 100) {
+	domas.visual();
+}
+```
 
 # Markdown Tutorial
 
