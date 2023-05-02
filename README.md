@@ -40,7 +40,12 @@ Video Demonstration:
 ### Shawn
 
 ![Planning Chart](images/j3.png)
-Taking inspiration from the general nautical theme of the song, I created a visual that represents how sailors would get their data on the high seas.
+Taking inspiration from the general nautical theme of the song, I created a visual that represents how sailors would get their data on the high seas. It features 4 distinct elements:
+
+- A background chart 'surface' to put the visual displays on
+- A sonar wave with tuned amplitudes to cover certain frequency ranges
+- A radar screen with an estimated location of ducks from the sonar
+- A radio transmission set to check how the sailor's communications are holding
 
 ### Norbert
 
