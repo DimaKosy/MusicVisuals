@@ -42,35 +42,36 @@ Sea shanties were always funny to me and one of the most memorable ones when I s
 I made two visuals for this project, one is a simple circle of rotating ducks which respond to the frequency bands. It is based off the cubes example shown in class.
 
 ```Java
-	for(int i = 0; i < DuckScaler.length; i++){
-            DuckScaler[i] = PApplet.map(mv.getSmoothedBands()[i],0,200,0.5f,3);
-        }
+for(int i = 0; i < DuckScaler.length; i++) {
+		DuckScaler[i] = PApplet.map(mv.getSmoothedBands()[i],0,200,0.5f,3);
+}
 ```
 
 ![Duck Battle](images/j4.png)
 The second visual creates an array of points. These points go from right to left at a set pace, their height is set by the average frequency bands value which is then multiplied by a sin() function and lerped.
-```Java
-	float BufferAvg(){
-		float Avg;
-		Avg = 0;
-		for(int i = 0 ; i < mv.getBands().length ; i ++){
-		    Avg += mv.getSmoothedBands()[i];
-		}
 
-		return (Avg/mv.getBands().length) *  0.3f;
-    	}
+```Java
+float BufferAvg() {
+	float Avg;
+	Avg = 0;
+	for(int i = 0 ; i < mv.getBands().length ; i ++){
+		Avg += mv.getSmoothedBands()[i];
+	}
+
+	return (Avg/mv.getBands().length) *  0.3f;
+}
 ```
 
 ```Java
-	if(p2 < p1){
-		points[(i + ((Move < 0)?0:1))%AmtPoints] = PApplet.lerp(points[(i + ((Move < 0)?1:0))%AmtPoints],(float)Math.sin(i*0.1)*ToLerp,0.5f);
-		continue;
-    	}
+if(p2 < p1) {
+	points[(i + ((Move < 0)?0:1))%AmtPoints] = PApplet.lerp(points[(i + ((Move < 0)?1:0))%AmtPoints],(float)Math.sin(i*0.1)*ToLerp,0.5f);
+	continue;
+}
 ```
 
 Each point is joined to the next point to make a wave
 ```Java
-	mv.line(p1, points[i] + WaveHeight, p2, points[(i+1)%AmtPoints] + WaveHeight);
+mv.line(p1, points[i] + WaveHeight, p2, points[(i+1)%AmtPoints] + WaveHeight);
 ```
 this allows us to render a single wave.
 
@@ -78,22 +79,21 @@ By rendering multiple waves we can also call on the JoinWaveVerts() function.
 This function joines the vertices of the waves so as to create triangles between them.
 
 ```Java
-	void JoinWaveVerts(Wave w1){
-		if(w1 == null){
-		    return;
-		}
-		for(int i = 0; i < w1.AmtPoints; i++){
+void JoinWaveVerts(Wave w1) {
+	if(w1 == null) {
+		return;
+	}
 
-			float p1 = ((float)(i)/AmtPoints)*WaveWidth;
-			float p2 = (i < w1.AmtPoints)?(((float)(i+1)/AmtPoints)*WaveWidth):(p1);
+	for(int i = 0; i < w1.AmtPoints; i++) {
 
-			mv.line(p1, GrabWavePoint(p1), p1, w1.GrabWavePoint(p1));
-			mv.line(p1, GrabWavePoint(p1)+2, p2, w1.GrabWavePoint(p2)-2);
-		}
-    	}
+		float p1 = ((float)(i)/AmtPoints)*WaveWidth;
+		float p2 = (i < w1.AmtPoints)?(((float)(i+1)/AmtPoints)*WaveWidth):(p1);
+
+		mv.line(p1, GrabWavePoint(p1), p1, w1.GrabWavePoint(p1));
+		mv.line(p1, GrabWavePoint(p1)+2, p2, w1.GrabWavePoint(p2)-2);
+	}
+}
 ```
-
-
 
 ### Shawn
 
