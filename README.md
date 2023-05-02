@@ -48,10 +48,12 @@ Taking inspiration from the general nautical theme of the song, I created a visu
 - A radio transmission set to check how the sailor's communications are holding
 
 While the current positions of the displays are fixed for the project, they could be rearranged in any alignment through code similar to this:
-'''
-sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadband Sonar", shapeH/42, "Hz", 0);
 
-'''
+```
+sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadband Sonar", shapeH/42, "Hz", 0);
+```
+
+where the final parameter '0' indicates that the display should be left-centre aligned to the chart.
 
 ### Norbert
 
