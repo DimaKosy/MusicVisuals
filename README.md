@@ -65,6 +65,32 @@ The second visual creates an array of points. These points go from right to left
     	}
 ```
 
+Each point is joined to the next point to make a wave
+```Java
+	mv.line(p1, points[i] + WaveHeight, p2, points[(i+1)%AmtPoints] + WaveHeight);
+```
+this allows us to render a single wave.
+
+By rendering multiple waves we can also call on the JoinWaveVerts() function.
+This function joines the vertices of the waves so as to create triangles between them.
+
+```Java
+	void JoinWaveVerts(Wave w1){
+		if(w1 == null){
+		    return;
+		}
+		for(int i = 0; i < w1.AmtPoints; i++){
+
+			float p1 = ((float)(i)/AmtPoints)*WaveWidth;
+			float p2 = (i < w1.AmtPoints)?(((float)(i+1)/AmtPoints)*WaveWidth):(p1);
+
+			mv.line(p1, GrabWavePoint(p1), p1, w1.GrabWavePoint(p1));
+			mv.line(p1, GrabWavePoint(p1)+2, p2, w1.GrabWavePoint(p2)-2);
+		}
+    	}
+```
+
+
 
 ### Shawn
 
