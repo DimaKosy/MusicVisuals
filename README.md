@@ -1,11 +1,11 @@
 # Music Visualiser Project
 
 Created by:
-1. C21376161 Dmytro Kosynskyy
-1. C21344786 Shawn Lorenzo
-1. C21518659 Norbert Krupa
-1. C21427252 Darren Grants
-1. C21321073 Domas Mockus
+- C21376161 Dmytro Kosynskyy
+- C21344786 Shawn Lorenzo
+- C21518659 Norbert Krupa
+- C21427252 Darren Grants
+- C21321073 Domas Mockus
 
 ## Project Instructions
 - Fork this repository and use it a starter project for your assignment
