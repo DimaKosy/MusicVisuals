@@ -27,6 +27,14 @@ Video Demonstration:
 
 ## The Song: Moby Duck (The Longest Johns)
 
+## Visual Representations
+
+### Dmytro
+### Shawn
+### Norbert
+### Darren
+### Domas
+
 # How It Works
 
 ## File Structure
