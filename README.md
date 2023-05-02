@@ -47,6 +47,34 @@ Taking inspiration from the general nautical theme of the song, I created a visu
 - A radar screen with an estimated location of ducks from the sonar
 - A radio transmission set to check how the sailor's communications are holding
 
+Audio data was being processed through the MyVisual/Visual class, which uses the Java Minim audio processing library. This was then modified to create certain wave amplitude behaviour such as:
+
+```
+// Wave visualisation method (with scaling/lerp functions)
+public void modWave(float scale)
+{
+	mv.pushStyle();
+	mv.beginShape();
+
+	for(int i = 0; i < mv.getAudioBuffer().size(); i++)
+	{
+		waveX = MyVisual.map(i, 0, mv.getAudioBuffer().size(), topX, topX+shapeW);
+		waveY = MyVisual.map(mv.getAudioBuffer().get(i), -1, 1, -scale*shapeH, scale*shapeH);
+		waveY = MyVisual.lerp(topY+shapeH/2, topY+shapeH/2+waveY, scale);
+		waveY = MyVisual.constrain(waveY, topY, topY+shapeH);
+
+		mv.smooth();
+		mv.noFill();
+		mv.stroke(255, 255, 0); // Change colour here
+		mv.strokeWeight(4);
+		mv.curveVertex(waveX, waveY);
+	}
+
+	mv.endShape();
+	mv.popStyle();
+}
+```
+
 While the current positions of the displays are fixed for the project, they could be rearranged in any alignment through code similar to this:
 
 ```
