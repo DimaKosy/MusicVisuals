@@ -506,6 +506,10 @@ All of our asset files are contained within the data folder
 | Gauge| Self written |
 | Board| Self written |
 | DM_Project2| Self written |
+| MobyDuck.mp3/wav| https://www.youtube.com/watch?v=xA7e_dxDOCo&ab_channel=TheLongestJohns |
+| MobyDuck.txt| Online |
+| duck.obj| [Online](https://free3d.com/3d-model/rubber-duck-v1--614347.html) |
+
 	
 	
 ## Playback Control
