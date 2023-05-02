@@ -1,23 +1,79 @@
-# Music Visualiser Project
+# Moby Duck: An Abstract Audio Visualiser
 
-Name:
+Video Demonstration:
 
-Student Number: 
+[![YouTube](https://i.ytimg.com/vi/COJVn6kwEO0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGBEgcigxMA8=&rs=AOn4CLAHZKIKf9K6LVqRE-1SGsLdISzUow)](https://youtu.be/COJVn6kwEO0)
 
-## Instructions
-- Fork this repository and use it a starter project for your assignment
-- Create a new package named your student number and put all your code in this package.
-- You should start by creating a subclass of ie.tudublin.Visual
-- There is an example visualiser called MyVisual in the example package
-- Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
+## Playback Instructions
+- To start the visual demonstration: press the spacebar (space key) once
+- To restart: press the spacebar again
 
-# Description of the assignment
+*The scenes automatically changes during playback (see 'How It Works')*
 
-# Instructions
+## Project Members
+- C21376161 Dmytro Kosynskyy
+- C21344786 Shawn Lorenzo
+- C21518659 Norbert Krupa
+- C21427252 Darren Grants
+- C21321073 Domas Mockus
 
-# How it works
+# Description Of The Project
 
-# What I am most proud of in the assignment
+## Project Brief
+- Create an abstract visual representation of a song of your choosing
+- Visualise using Java Processing, Minim and/or Processing Sound libraries
+- It should represent the chosen song's theme, narrative, mood, tempo and/or structure
+- Showcase teamwork, creativity, technical skills and communication through tools such as GitHub for project management
+
+## The Song: Moby Duck (The Longest Johns)
+
+[![YouTube](https://i.ytimg.com/vi/xA7e_dxDOCo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuQlaJv-4ykUREOM2cqb-ALwUR2w)](https://youtu.be/xA7e_dxDOCo)
+
+## Visual Representations
+
+### Dmytro
+
+![Duck Scale](images/j2.png)
+
+![Duck Battle](images/j4.png)
+
+### Shawn
+
+![Planning Chart](images/j3.png)
+Taking inspiration from the general nautical theme of the song, I created a visual that represents how sailors would get their data on the high seas. It features 4 distinct elements:
+
+- A background chart 'surface' to put the visual displays on
+- A sonar wave with tuned amplitudes to cover certain frequency ranges
+- A radar screen with an estimated location of ducks from the sonar
+- A radio transmission set to check how the sailor's communications are holding
+
+### Norbert
+
+![Lyric Wave](images/j1.png)
+
+### Darren
+
+![Bubbles](images/j5.png)
+
+### Domas
+
+![Bars](images/j6.png)
+
+# How It Works
+
+## File Structure
+
+## Audio-To-Visual Analysis
+
+## Playback Control
+
+# What We Are Most Proud Of
+
+### Dmytro
+### Shawn
+### Norbert
+### Darren
+### Domas
 
 # Markdown Tutorial
 
@@ -86,4 +142,3 @@ This is a table:
 |Some stuff | Some more stuff in this column |
 |Some stuff | Some more stuff in this column |
 |Some stuff | Some more stuff in this column |
-
