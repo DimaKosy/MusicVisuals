@@ -21,7 +21,7 @@ Video Demonstration:
 
 ## Project Brief
 - Create an abstract visual representation of a song of your choosing
-- Create said visuals using Java Processing, Minim and/or Processing Sound libraries
+- Visualise using Java Processing, Minim and/or Processing Sound libraries
 - It should represent the chosen song's theme, narrative, mood, tempo and/or structure
 - Showcase teamwork, creativity, technical skills and communication through tools such as GitHub for project management
 
