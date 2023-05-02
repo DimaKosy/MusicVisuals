@@ -56,7 +56,6 @@ public class Norbert
                 {
                     Character c = lyricLine.line.get(j);
                     
-
                     if(j > 0)
                     {
                         Character prev = lyricLine.line.get(j - 1);
