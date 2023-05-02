@@ -1,4 +1,4 @@
-# Music Visualiser Project
+# Moby Duck: An Abstract Audio Visualiser
 
 Sample Video:
 
