@@ -410,7 +410,7 @@ public void render()
 
 Overall, I was very proud of my bubbles. I enjoyed working on them as I got to understand movement mechanics for an object. I was also proud of the bubble's tail, as they were originally meant to be explosive bubbles; however I liked the growing effect a bit more than an explosion! I could've improved the bounce movement of the bubbles from the current implementation by increasing the DIRX value to say, 1.15 for the video. The 3D wave was also cool to see as opposed to a more normal wave.
 
-Neat things I learned doing this visual is the use of subclasses, the use of arrays to store more than one instance of an object and experimenting with vector movement.
+Neat things I learned doing this visual are the use of subclasses, the use of arrays to store more than one instance of an object and experimenting with vector movement.
 
 ### Domas: Acoustic Bars
 
