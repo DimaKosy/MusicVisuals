@@ -28,6 +28,11 @@ Video Demonstration:
 ## The Song: Moby Duck (The Longest Johns)
 
 [![YouTube](https://i.ytimg.com/vi/xA7e_dxDOCo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDuQlaJv-4ykUREOM2cqb-ALwUR2w)](https://youtu.be/xA7e_dxDOCo)
+While I (Dmytro) was searching for a song for our project, I got confronted by a flock of ducks. They wouldn't scatter quickly enough so I waved my foot across them and scared them off!
+Then I had an idea...
+
+Sea shanties were always funny to me and one of the most memorable ones when I saw those ducks was this hit by The Longest Johns. It depicts a long-retired sailor, whose solitude was interrupted by a mythical, giant duck on his lake. He then goes to settle the score with the duck with the help of his ol' mates, and after a long, well-fought battle, they celebrated with a banquet of BBQed duck, pancakes and oyster sauce!
+
 
 ## Visual Representations
 
