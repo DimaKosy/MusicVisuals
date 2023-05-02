@@ -148,6 +148,7 @@ It should be noted that the sailor from the song was likely from the 1800's, so 
 ### Norbert
 
 ![Lyric Wave](images/j1.png)
+My visual is a wave of lyrics that changes height with the amplitude of the song. To make this, I used three classes:
 
 ### Darren
 
