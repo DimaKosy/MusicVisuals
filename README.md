@@ -20,7 +20,7 @@ Created by:
 
 # How it works
 
-# What I am most proud of in the assignment
+# What we are most proud of in the assignment
 
 # Markdown Tutorial
 
