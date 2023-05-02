@@ -11,11 +11,11 @@ Video Demonstration:
 *The scenes automatically changes during playback (see 'How It Works')*
 
 ## Project Members
-- C21376161 Dmytro Kosynskyy
-- C21344786 Shawn Lorenzo
-- C21518659 Norbert Krupa
-- C21427252 Darren Grants
-- C21321073 Domas Mockus [Domas](https://github.com/Orbdom)
+- C21376161 Dmytro Kosynskyy [@DimaKosy](https://github.com/DimaKosy)
+- C21344786 Shawn Lorenzo [@ByteFlypVS](https://github.com/ByteFlypVS)
+- C21518659 Norbert Krupa [@Voirtez](https://github.com/Voirtez)
+- C21427252 Darren Grants [@darrenomight](https://github.com/darrenomight)
+- C21321073 Domas Mockus [@Orbdom](https://github.com/Orbdom)
 
 # Description Of The Project
 
