@@ -47,6 +47,12 @@ Taking inspiration from the general nautical theme of the song, I created a visu
 - A radar screen with an estimated location of ducks from the sonar
 - A radio transmission set to check how the sailor's communications are holding
 
+While the current positions of the displays are fixed for the project, they could be rearranged in any alignment through code similar to this:
+'''
+sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadband Sonar", shapeH/42, "Hz", 0);
+
+'''
+
 ### Norbert
 
 ![Lyric Wave](images/j1.png)
