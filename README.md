@@ -436,8 +436,64 @@ Neat things I learned doing this visual are the use of subclasses, the use of ar
 ### Domas: Acoustic Bars
 
 ![Bars](images/j6.png)
+My visual involved creating a set of separated column bars that rise or lower depending on the amplitude of the music.
 
-# How It Works Generally
+For this, I extensively used the floor method to figure out how many squares in the separated column can fit to the screen size overall and how many are needed to fill to a certain amplitude.
+
+``` Java
+// Calculate the number of squares that can fit in the window
+int numSquares = PApplet.floor((mv.height - verticalGapSize) / (squareSize + verticalGapSize));
+
+// Calculate the number of squares in the column
+int squaresInColumn = PApplet.floor(numSquares * (smoothedAmplitude * 2 + mv.random(-0.02f, 0.02f)));
+```
+
+I then used the methods from MyVisual to create a class copy of the audio data as I was more familiar with this technique that referencing from MyVisual. I also smoothed the amplitude readings to make the visual less jarring to watch.
+
+``` Java
+// Get the current sound data
+float[] samples = ab.toArray();
+
+// Calculate the amplitude of the current buffer
+amplitude = 0;
+for (int i = 0; i < samples.length; i++) {
+	amplitude += samples[i] * samples[i];
+}
+amplitude = PApplet.sqrt(amplitude / samples.length);
+
+// Interpolate between the previous amplitude and the current amplitude
+smoothedAmplitude = PApplet.lerp(smoothedAmplitude, amplitude, 0.6f);
+```
+
+Finally, I used these combined information to create a set of bar columns depending on how many I wanted on the screen when my visual runs.
+
+``` Java
+for (int i = 0; i < numColumns; i++) {
+	// Calculate the number of squares in the column
+	int squaresInColumn = PApplet.floor(numSquares * (smoothedAmplitude * 2 + mv.random(-0.02f, 0.02f)));
+
+	// Draw the squares
+	float y = mv.height - verticalGapSize;
+	int squareCounter = 0;
+	while (squareCounter < squaresInColumn) {
+		// Calculate the color based on the height
+		float c = PApplet.map(y, 0, mv.height, 0, 255);
+		mv.fill(c, 200, 200);
+		mv.rect(x, y - squareSize, columnWidth, squareSize);
+		squareCounter++;
+		y -= (squareSize + verticalGapSize);
+	}
+
+	// Move to the next column
+	x += columnWidth + horizontalGapSize;
+}
+```
+
+Overall, the thing I was most proud of is the way the individual squares stack up against one another within the column. I could've made it more complex by trying to reference MyVisual more instead of passing local instances of PApplet or Minim in several occassions; but that's part of the learning process!
+
+# How It Works
+
+## In General
 All our code is ran through the MyVisual class that was provided with the skeleton code. We are using the functions that were already implemented from the Visual class and building on top of them.
 
 Each person's code is ran through some sort of 'visual' function in their main class. This allows for consistency in our code.
@@ -474,7 +530,6 @@ public void visual()
 ```
 
 For this implementation, we decided which person's visual is on-screen with an if statement. *See Playback Control for details*
-
 
 ## File Structure
 Each member created a package for themself, inside of which we had our own code.
