@@ -34,6 +34,8 @@ Video Demonstration:
 ### Dmytro
 ### Shawn
 ### Norbert
+
+![Lyric Wave](image.png)
 ### Darren
 ### Domas
 
