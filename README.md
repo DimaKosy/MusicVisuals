@@ -97,6 +97,15 @@ void JoinWaveVerts(Wave w1) {
 }
 ```
 
+As the boats need to know what vertex to "float" on I had to create a function to find the poet that is currently at a specific X position on the screen
+```Java
+public float GrabWavePoint(float pos){
+        //WaveWidth * (WaveOffset/(float)WaveWidth) + WaveWidth;
+        //p1 = (offset + (i/AmtPoints)*WaveWidth) % WaveWidth
+        return points[((int)PApplet.round((float) AmtPoints * ( ((pos - WaveOffset + WaveWidth))%WaveWidth / WaveWidth))) % AmtPoints] + WaveHeight;
+    }
+```
+
 ### Shawn: What's Out There?
 
 ![Planning Chart](images/j3.png)
