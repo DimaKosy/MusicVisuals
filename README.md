@@ -270,6 +270,9 @@ for(int i = 0; i < lyrics.size(); i++)
 	}
 }
 ```
+If I had to choose one thing in my visual that I'm most proud of, it would have to be that I got the class structure working exactly the way I envisioned it without having to make any compromises or massive changes.
+
+Throughout the project, I learned how to parse files (in Java), manipulate strings, work with array lists, create efficient class structures in an object oriented manner, sync visuals with audio and make audio control visuals.
 	
 ### Darren: Growing Bubbles
 
