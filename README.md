@@ -69,11 +69,11 @@ if(p2 < p1) {
 }
 ```
 
-Each point is joined to the next point to make a wave
+Each point is joined to the next point to make a wave like so:
 ```Java
 mv.line(p1, points[i] + WaveHeight, p2, points[(i+1)%AmtPoints] + WaveHeight);
 ```
-this allows us to render a single wave.
+...which allows us to render a single wave.
 
 By rendering multiple waves we can also call on the JoinWaveVerts() function.
 This function joines the vertices of the waves so as to create triangles between them.
