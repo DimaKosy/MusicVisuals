@@ -1,6 +1,6 @@
 # Music Visualiser Project
 
-Created by:
+## Project Members
 - C21376161 Dmytro Kosynskyy
 - C21344786 Shawn Lorenzo
 - C21518659 Norbert Krupa
