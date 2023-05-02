@@ -482,6 +482,32 @@ All of our assets were stored inside a data folder.
 
 All of our asset files are contained within the data folder
 
+##List of Classes/assets
+
+| Class/asset| Source|
+|-----------|-----------|
+|Dima | Self written |
+|Bobber | Self written |
+|Boat| Self written |
+| DuckCircle | Self written |
+| DuckVortex | Self written |
+|SuperDuck | Self written |
+| Wave| Self written |
+| Norbert | Self written |
+| LyricLine| Self written |
+| Character| Self written |
+| Darren| Self written |
+| bubble| Self written |
+| bubbles| Self written |
+| crosswave| Self written |
+| Shawn| Self written |
+| Sonar| Self written |
+| Rader| Self written |
+| Gauge| Self written |
+| Board| Self written |
+| DM_Project2| Self written |
+	
+	
 ## Playback Control
 We map getAudioPlayer.position between 0 and the song lenght in ms, this allows us to turn it map it between 0 and 100 so that we can split the song easier
 ``` Java
