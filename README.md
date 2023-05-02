@@ -15,7 +15,7 @@ Video Demonstration:
 - C21344786 Shawn Lorenzo
 - C21518659 Norbert Krupa
 - C21427252 Darren Grants
-- C21321073 Domas Mockus
+- C21321073 Domas Mockus [Domas](https://github.com/Orbdom)
 
 # Description Of The Project
 
