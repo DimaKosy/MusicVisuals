@@ -14,13 +14,17 @@
 - There is an example visualiser called MyVisual in the example package
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
-# Description Of The Assignment
+# Description Of The Project
 
 # Instructions
+- To start the visual demonstration: press the spacebar (space key) once
+- To restart: press the spacebar again
+
+*The scenes automatically changes during playback*
 
 # How It Works
 
-# What We Are Most Proud Of In The Assignment
+# What We Are Most Proud Of In The Project
 
 # Markdown Tutorial
 
