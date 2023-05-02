@@ -47,11 +47,45 @@ Taking inspiration from the general nautical theme of the song, I created a visu
 - A radar screen with an estimated location of ducks from the sonar
 - A radio transmission set to check how the sailor's communications are holding
 
-While the current positions of the displays are fixed for the project, they could be rearranged in any alignment through code similar to this:
-'''
-sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadband Sonar", shapeH/42, "Hz", 0);
+Audio data was being processed through the MyVisual/Visual class, which uses the Java Minim audio processing library. This was then modified to create certain wave amplitude behaviour for the sonar, such as:
 
-'''
+``` Java
+// Wave visualisation method (with scaling/lerp functions)
+public void modWave(float scale)
+{
+	mv.pushStyle();
+	mv.beginShape();
+
+	for(int i = 0; i < mv.getAudioBuffer().size(); i++)
+	{
+		waveX = MyVisual.map(i, 0, mv.getAudioBuffer().size(), topX, topX+shapeW);
+		waveY = MyVisual.map(mv.getAudioBuffer().get(i), -1, 1, -scale*shapeH, scale*shapeH);
+		waveY = MyVisual.lerp(topY+shapeH/2, topY+shapeH/2+waveY, scale);
+		waveY = MyVisual.constrain(waveY, topY, topY+shapeH);
+
+		mv.smooth();
+		mv.noFill();
+		mv.stroke(255, 255, 0); // Change colour here
+		mv.strokeWeight(4);
+		mv.curveVertex(waveX, waveY);
+	}
+
+	mv.endShape();
+	mv.popStyle();
+}
+```
+
+...where 'scale' is a scaling factored applied to the lerped y-values for the AudioBuffer.
+
+While the current positions of the displays are fixed for the project, they could be rearranged in any alignment through code similar to this:
+
+``` Java
+sonar1.screen(shapeW, (shapeH/2)-(shapeH/3), shapeW/2.5f, shapeH/6, 7, "Broadband Sonar", shapeH/42, "Hz", 0);
+```
+
+...where the final parameter '0' indicates that the display should be left-centre aligned to the chart.
+
+It should be noted that the sailor from the song was likely from the 1800's, so he probably didn't have access to these tools to find pirates, let alone a giant duck!
 
 ### Norbert
 
