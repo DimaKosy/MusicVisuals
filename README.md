@@ -45,7 +45,7 @@ Video Demonstration:
 
 ## Playback Control
 
-# What We Are Most Proud Of In The Project
+# What We Are Most Proud Of
 
 ### Dmytro
 ### Shawn
