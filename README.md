@@ -196,16 +196,67 @@ public class LyricLine
 ```
 
 I created an array list of LyricLine objects in the Norbert class. I then parsed the lyrics as a text file in the format <timestamp in milliseconds> <lyric> split this into two parts.
+
+
+I stored the timestamps into the timestamp variables in the LyricLine objects. Then I split the line of lyrics into individual characters and stored the characters into the array list of Character objects in the LyricLine object.
 ``` Java
+for(int i = 0; i < lines.length; i++)
+{
+	String[] words = PApplet.split(lines[i], " ");
+      	int timestamp = Integer.parseInt(words[0]);
 
+      	ArrayList<Character> line = new ArrayList<Character>();
 
-I stored the timestamps into the timestamp variables in the LyricLine objects. Then I split the line of lyrics into individual characters and stored the characters into the array list of Character objects in the LyricLine object
+      	for(int j = 1; j < words.length; j++)
+       	{
+       		String word = words[j];
+
+              	for(int k = 0; k < word.length(); k++)
+                {
+                	char c = word.charAt(k);
+                    	line.add(new Character(mv, c, mv.width + mv.textWidth(c ), mv.height / 2)); 
+                }
+
+               	line.add(new Character(mv, ' ', mv.width, mv.height / 2));
+    	}
+
+     	lyrics.add(new LyricLine(mv, line, timestamp));
+}
+```
 
 I then use an if statement to check the position of the audio player. If the position of the player is equal to the timestamp, the corresponding line of lyrics is displayed on the right side of the screen.
 The lyric line is displayed character by character using the text() function adding sin(radians(x) * amplitude to the y. The wave is multiplied by the amplitude to get the desired effect of the height of the wave changing.
 I also add an offset to the x of every character after the first. This is done by using an if statement to check if the index is greater than 0. If this is the case I assign current x to be the previous x plus the width of the previous character.
 Right before the text is displayed, I decrement the x by 6.0f so that the line of lyrics scrolls towards the left of the screen.
+``` Java
+for(int i = 0; i < lyrics.size(); i++)
+{
+	LyricLine lyricLine = lyrics.get(i);
 
+	if(mv.getAudioPlayer().position() >= lyricLine.timestamp)
+	{
+		amp = mv.getSmoothedAmplitude() * 300;
+            
+		for(int j = 0; j < lyricLine.line.size(); j++)
+		{
+			Character c = lyricLine.line.get(j);
+                    
+			if(j > 0)
+			{	
+				Character prev = lyricLine.line.get(j - 1);
+				c.x = prev.x + mv.textWidth(prev.c) * 1.3f;
+			}
+                    
+			c.x -= 6.0f;
+			mv.fill(255);
+			mv.textSize(32);
+			mv.text(c.c, c.x, c.y + PApplet.sin(PApplet.radians(c.x)) * amp);
+
+		}
+	}
+}
+```
+	
 ### Darren
 
 ![Bubbles](images/j5.png)
