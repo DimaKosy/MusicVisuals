@@ -384,29 +384,28 @@ For the 3D wave, I lerped the coordinates of a set of rectangles by the AudioBuf
 
 ``` Java
 public void render() 
-    {
-        vis.colorMode(PApplet.HSB);
-        for (int i = 0; i < vis.getAudioBuffer().size(); i++) {
-            // setting the stroke to the rectangle using map
-            vis.stroke(
-                    PApplet.map(i, 0, vis.getAudioBuffer().size(), 0, 255), 255, 255);
+{
+	vis.colorMode(PApplet.HSB);
+	for (int i = 0; i < vis.getAudioBuffer().size(); i++) {
+		// setting the stroke to the rectangle using map
+		vis.stroke(
+				PApplet.map(i, 0, vis.getAudioBuffer().size(), 0, 255), 255, 255);
 
-            // Setting the lurp variables
-            lerpedBuffer[i] = vis.lerp(lerpedBuffer[i], 350 * vis.getAudioBuffer().get(i), 0.12f);
+		// Setting the lurp variables
+		lerpedBuffer[i] = vis.lerp(lerpedBuffer[i], 350 * vis.getAudioBuffer().get(i), 0.12f);
 
-            vis.fill(
-                    PApplet.map(i, 0, vis.getAudioBuffer().size(), 0, 255), 215, 255
+		vis.fill(
+				PApplet.map(i, 0, vis.getAudioBuffer().size(), 0, 255), 215, 255
 
-            );
-            vis.rect(width * ((float) i / (float) vis.getAudioBuffer().size()), cy - lerpedBuffer[i],
-                    90 * width / vis.getAudioBuffer().size(), lerpedBuffer[i]);
-            
+		);
+		vis.rect(width * ((float) i / (float) vis.getAudioBuffer().size()), cy - lerpedBuffer[i],
+				90 * width / vis.getAudioBuffer().size(), lerpedBuffer[i]);
+		
+		// Comment out the below to get rif of 
+		vis.rect(halfW - lerpedBuffer[i]/2, halfH, lerpedBuffer[i],height );
 
-            // Comment out the below to get rif of 
-            vis.rect(halfW - lerpedBuffer[i]/2, halfH, lerpedBuffer[i],height );
-
-        }
-    }
+	}
+}
 ```
 
 Overall, I was very proud of my bubbles. I enjoyed working on them as I got to understand movement mechanics for an object. I was also proud of the bubble's tail, as they were originally meant to be explosive bubbles; however I liked the growing effect a bit more than an explosion! I could've improved the bounce movement of the bubbles from the current implementation by increasing the DIRX value to say, 1.15 for the video. The 3D wave was also cool to see as opposed to a more normal wave.
