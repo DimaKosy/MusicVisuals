@@ -618,18 +618,18 @@ if(position >= 80 && position <= 100) {
 |SuperDuck | Self written |
 | Wave| Self written |
 | Norbert | Self written - main drawing class |
-| LyricLine| Self written |
-| Character| Self written |
-| Darren| Self written - main drawing class |
-| bubble| Self written |
-| bubbles| Self written |
-| crosswave| Self written |
-| Shawn| Self written - main drawing class |
-| Sonar| Self written |
-| Rader| Self written |
-| Gauge| Self written |
-| Board| Self written |
-| DM_Project2| Self written - main drawing class |
-| MobyDuck.mp3/wav| [YouTube](https://www.youtube.com/watch?v=xA7e_dxDOCo&ab_channel=TheLongestJohns) |
-| MobyDuck.txt| [Online](https://genius.com/The-longest-johns-moby-duck-lyrics) |
-| duck.obj| [Online](https://free3d.com/3d-model/rubber-duck-v1--614347.html) |
+| LyricLine | Self written |
+| Character | Self written |
+| Darren | Self written - main drawing class |
+| bubble | Self written |
+| bubbles | Self written |
+| crosswave | Self written |
+| Shawn | Self written - main drawing class |
+| Sonar | Self written |
+| Radar | Self written |
+| Gauge | Self written |
+| Board | Self written |
+| DM_Project2 | Self written - main drawing class |
+| MobyDuck.mp3/wav | [YouTube](https://www.youtube.com/watch?v=xA7e_dxDOCo&ab_channel=TheLongestJohns) |
+| MobyDuck.txt | [Online](https://genius.com/The-longest-johns-moby-duck-lyrics) |
+| duck.obj | [Online](https://free3d.com/3d-model/rubber-duck-v1--614347.html) |
