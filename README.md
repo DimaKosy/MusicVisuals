@@ -41,7 +41,7 @@ When he gave the piece to the team, we thought it was funny and would be a fun t
 ### Dmytro: Ducks, Ships And Waves
 
 ![Duck Scale](images/j2.png)
-I made two visuals for this project, one is a simple circle of rotating ducks which respond to the frequency bands. It is based off the cubes example shown in class.
+I made two visuals for this project; one is a simple circle of rotating ducks which respond to the audio frequency bands. It is based off the cubes example shown in class.
 
 ```Java
 for(int i = 0; i < DuckScaler.length; i++) {
