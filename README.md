@@ -609,6 +609,7 @@ if(position >= 80 && position <= 100) {
 
 | Class/Asset| Source |
 |-----------|-----------|
+| Visual | Provided skeleton - main audio analysis class |
 | MyVisual | Provided skeleton - main calling/execution class |
 | Dima | Self written - main drawing class |
 | Bobber | Self written |
