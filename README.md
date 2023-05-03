@@ -498,7 +498,7 @@ Each member created a package for themselves, inside of which we had our own cod
 
 ![Structure](images/j8.png)
 
-Each person's code is ran through some sort of 'visual' function in their main drawing class. This allows for reading consistency in our code.
+Each person's code is ran through some sort of 'visual' function in their main drawing class. This allows for reading consistency in our code. We are also using the functions that were already implemented from the Visual class and building on top of them.
 
 ``` Java
 // Example visual() method from Shawn's visualiser
@@ -537,7 +537,7 @@ public void visual()
 }
 ```
 
-All our code ran through the MyVisual class that was provided with the skeleton code. We are using the functions that were already implemented from the Visual class and building on top of them.
+All our code ran through the MyVisual class that was provided with the skeleton code as follows:
 
 ``` Java
 // Import statements to each of the project members
@@ -563,47 +563,13 @@ darren = new Darren(this);
 domas = new DM_Project2(this);
 ```
 
-For this implementation, we decided which person's visual is on-screen with an if statement. *See Playback Control for details*
-
-## File Structure
-
-
-All of our asset files are contained within the data folder
-
-## List Of Classes/Assets Used
-
-| Class/Asset| Source|
-|-----------|-----------|
-|Dima | Self written |
-|Bobber | Self written |
-|Boat| Self written |
-| DuckCircle | Self written |
-| DuckVortex | Self written |
-|SuperDuck | Self written |
-| Wave| Self written |
-| Norbert | Self written |
-| LyricLine| Self written |
-| Character| Self written |
-| Darren| Self written |
-| bubble| Self written |
-| bubbles| Self written |
-| crosswave| Self written |
-| Shawn| Self written |
-| Sonar| Self written |
-| Rader| Self written |
-| Gauge| Self written |
-| Board| Self written |
-| DM_Project2| Self written |
-| MobyDuck.mp3/wav| https://www.youtube.com/watch?v=xA7e_dxDOCo&ab_channel=TheLongestJohns |
-| MobyDuck.txt| Online |
-| duck.obj| [Online](https://free3d.com/3d-model/rubber-duck-v1--614347.html) |
-
-## Playback Control
-We map getAudioPlayer.position between 0 and the song lenght in ms, this allows us to turn it map it between 0 and 100 so that we can split the song easier
+We decided early on that the visual shown should automatically change depending on what percentage has the song been completed. To do this, Dmytro mapped the Visual's position parameter and translated the total length of the song into a precentage count. Then, he used if statements to determine the position each visual would display. We tried getting it close to the chorus-verse transitions, but it was a bit of a hassle to accurately determine them!
 
 ``` Java
+// Map the song length to a percentage
 position = map(getAudioPlayer().position(), 0, getAudioPlayer().length(), 0, 100);
 
+// Display visuals when the song reaches the position percentage
 if(position <= 20) {
 	background(0);
 	norbert.visual();   
@@ -634,3 +600,34 @@ if(position >= 80 && position <= 100) {
 	domas.visual();
 }
 ```
+
+## List Of Classes/Assets Used
+
+| Class/Asset| Source|
+|-----------|-----------|
+| Dima | Self written |
+| Bobber | Self written |
+| Boat| Self written |
+| DuckCircle | Self written |
+| DuckVortex | Self written |
+|SuperDuck | Self written |
+| Wave| Self written |
+| Norbert | Self written |
+| LyricLine| Self written |
+| Character| Self written |
+| Darren| Self written |
+| bubble| Self written |
+| bubbles| Self written |
+| crosswave| Self written |
+| Shawn| Self written |
+| Sonar| Self written |
+| Rader| Self written |
+| Gauge| Self written |
+| Board| Self written |
+| DM_Project2| Self written |
+| MobyDuck.mp3/wav| https://www.youtube.com/watch?v=xA7e_dxDOCo&ab_channel=TheLongestJohns |
+| MobyDuck.txt| Online |
+| duck.obj| [Online](https://free3d.com/3d-model/rubber-duck-v1--614347.html) |
+
+## Playback Control
+We map getAudioPlayer.position between 0 and the song lenght in ms, this allows us to turn it map it between 0 and 100 so that we can split the song easier
