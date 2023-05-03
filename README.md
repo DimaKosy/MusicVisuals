@@ -496,11 +496,14 @@ Overall, the thing I was most proud of is the way the individual squares stack u
 # How It Works
 
 ## File Structure And Class Formats
+
+![Packages](images/j9.png)
+
 Each member created a package for themselves, inside of which we had our own code. It consists of a main drawing class (files named after ourselves) that then calls the other objects inside their package.
 
 ![Structure](images/j8.png)
 
-Each person's code is ran through some sort of 'visual' function in their main drawing class. This allows for reading consistency in our code. We are also using the functions that were already implemented from the Visual class and building on top of them.
+Each person's code is referenced to MyVisual through some sort of 'visual' function in their main drawing class. This allows for reading consistency in our code. We are also using the functions that were already implemented from the Visual class and building on top of them.
 
 ``` Java
 // Example visual() method from Shawn's visualiser
