@@ -494,6 +494,10 @@ for (int i = 0; i < numColumns; i++) {
 Overall, the thing I was most proud of is the way the individual squares stack up against one another within the column. I could've made it more complex by trying to reference MyVisual more instead of passing local instances of PApplet or Minim in several occassions; but that's part of the learning process!
 
 # How It Works
+Each member created a package for themselves, inside of which we had our own code. It consists of a main drawing class (files named after ourselves) that then calls the other objects inside their package.
+
+![Structure](images/j8.png)
+
 
 All our code ran through the MyVisual class that was provided with the skeleton code. We are using the functions that were already implemented from the Visual class and building on top of them.
 
@@ -563,7 +567,7 @@ public void visual()
 For this implementation, we decided which person's visual is on-screen with an if statement. *See Playback Control for details*
 
 ## File Structure
-Each member created a package for themselves, inside of which we had our own code. It consists of a main drawing class (files named after ourselves) that then calls the other objects inside their package.
+
 
 All of our asset files are contained within the data folder
 
