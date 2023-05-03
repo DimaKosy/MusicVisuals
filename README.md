@@ -498,33 +498,6 @@ Each member created a package for themselves, inside of which we had our own cod
 
 ![Structure](images/j8.png)
 
-
-All our code ran through the MyVisual class that was provided with the skeleton code. We are using the functions that were already implemented from the Visual class and building on top of them.
-
-``` Java
-// Import statements to each of the project members
-import ie.tudublin.*;
-import c21376161.*;
-import c21321073.DM_Project2;
-import c21344786.*;
-import c21518659.*;
-import c21427252.*;
-
-// Create an instance of their main drawing class and initialise them with the instance for MyVisual
-Dima dima;
-Norbert norbert;
-Shawn shawn;
-Darren darren;
-DM_Project2 domas;
-
-dima = new Dima(this);
-norbert = new Norbert(this);
-dima = new Dima(this);
-shawn = new Shawn(this);
-darren = new Darren(this);
-domas = new DM_Project2(this);
-```
-
 Each person's code is ran through some sort of 'visual' function in their main drawing class. This allows for reading consistency in our code.
 
 ``` Java
@@ -562,6 +535,32 @@ public void visual()
 	radar1.scan(mv.frameCount, 1.5f);
 	radar1.screen(shapeW, shapeH*11/20, shapeH/1.55f, 6, 24, "Long-Range Radar", shapeH/36, 2);
 }
+```
+
+All our code ran through the MyVisual class that was provided with the skeleton code. We are using the functions that were already implemented from the Visual class and building on top of them.
+
+``` Java
+// Import statements to each of the project members
+import ie.tudublin.*;
+import c21376161.*;
+import c21321073.DM_Project2;
+import c21344786.*;
+import c21518659.*;
+import c21427252.*;
+
+// Create an instance of their main drawing class and initialise them with the instance for MyVisual
+Dima dima;
+Norbert norbert;
+Shawn shawn;
+Darren darren;
+DM_Project2 domas;
+
+dima = new Dima(this);
+norbert = new Norbert(this);
+dima = new Dima(this);
+shawn = new Shawn(this);
+darren = new Darren(this);
+domas = new DM_Project2(this);
 ```
 
 For this implementation, we decided which person's visual is on-screen with an if statement. *See Playback Control for details*
