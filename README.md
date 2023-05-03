@@ -563,6 +563,8 @@ darren = new Darren(this);
 domas = new DM_Project2(this);
 ```
 
+## Playback Control
+
 We decided early on that the visual shown should automatically change depending on what percentage has the song been completed. To do this, Dmytro mapped the Visual's position parameter and translated the total length of the song into a precentage count. Then, he used if statements to determine the position each visual would display. We tried getting it close to the chorus-verse transitions, but it was a bit of a hassle to accurately determine them!
 
 ``` Java
@@ -605,6 +607,7 @@ if(position >= 80 && position <= 100) {
 
 | Class/Asset| Source |
 |-----------|-----------|
+| MyVisual | Provided skeleton - main calling/execution class |
 | Dima | Self written - main drawing class |
 | Bobber | Self written |
 | Boat| Self written |
