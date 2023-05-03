@@ -177,6 +177,8 @@ For me, I was proud that all the elements are working as intended; this is given
 
 Through working with this visual, I further understood the heirarchies that exist in Object-Oriented Programming, how different classes interact with each other to perform tasks and learned a thing or two on how to design a visual that can scale to different screens (Dmytro can fill in the details when first merging my visual to the master branch!)
 
+![Merge Error](images/j7.png)
+
 ### Norbert: Lively Lyrics
 
 ![Lyric Wave](images/j1.png)
