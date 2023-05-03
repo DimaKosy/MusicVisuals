@@ -106,6 +106,11 @@ public float GrabWavePoint(float pos){
     }
 ```
 
+The things I was most proud of during this project included being able to use OOP concepts to create different objects to achieve the visuals I wanted. The part of code I am most proud of is my GrabWavePoint method, as my wave is an array of floats constantly moving left to right being able to determine which point is at what position is very important and a headache to reverse, it took quite a bit of trial and error.
+
+Through working on this porject I learnt more about OOP concepts and practices and how to best apply them to actual code. I also learnt about the importance of good teamwork, showing up to team meetings, and getting things done early. 
+
+
 ### Shawn: What's Out There?
 
 ![Planning Chart](images/j3.png)
