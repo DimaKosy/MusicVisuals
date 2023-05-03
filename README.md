@@ -522,7 +522,7 @@ darren = new Darren(this);
 domas = new DM_Project2(this);
 ```
 
-Each person's code is ran through some sort of 'visual' function in their main class. This allows for reading consistency in our code.
+Each person's code is ran through some sort of 'visual' function in their main drawing class. This allows for reading consistency in our code.
 
 ``` Java
 // Example visual() method from Shawn's visualiser
@@ -564,8 +564,7 @@ public void visual()
 For this implementation, we decided which person's visual is on-screen with an if statement. *See Playback Control for details*
 
 ## File Structure
-Each member created a package for themself, inside of which we had our own code.
-All of our assets were stored inside a data folder.
+Each member created a package for themselves, inside of which we had our own code. It consists of a main drawing class (files named after ourselves) that then calls the other objects inside their package.
 
 All of our asset files are contained within the data folder
 
