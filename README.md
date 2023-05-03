@@ -495,7 +495,6 @@ Overall, the thing I was most proud of is the way the individual squares stack u
 
 # How It Works
 
-## In General
 All our code ran through the MyVisual class that was provided with the skeleton code. We are using the functions that were already implemented from the Visual class and building on top of them.
 
 ``` Java
@@ -568,7 +567,7 @@ Each member created a package for themselves, inside of which we had our own cod
 
 All of our asset files are contained within the data folder
 
-### List of classes/assets
+## List Of Classes/Assets Used
 
 | Class/Asset| Source|
 |-----------|-----------|
