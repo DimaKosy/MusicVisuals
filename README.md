@@ -608,6 +608,8 @@ if(position >= 80 && position <= 100) {
 }
 ```
 
+Also, since the song is just under 3 mins long, we decided not to include a pause functionality as we wanted the audience to see the automatic visual change during each of the verse.
+
 ## List Of Classes/Assets Used
 
 | Class/Asset| Source |
