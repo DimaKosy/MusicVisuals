@@ -496,9 +496,33 @@ Overall, the thing I was most proud of is the way the individual squares stack u
 # How It Works
 
 ## In General
-All our code is ran through the MyVisual class that was provided with the skeleton code. We are using the functions that were already implemented from the Visual class and building on top of them.
+All our code ran through the MyVisual class that was provided with the skeleton code. We are using the functions that were already implemented from the Visual class and building on top of them.
 
-Each person's code is ran through some sort of 'visual' function in their main class. This allows for consistency in our code.
+``` Java
+// Import statements to each of the project members
+import ie.tudublin.*;
+import c21376161.*;
+import c21321073.DM_Project2;
+import c21344786.*;
+import c21518659.*;
+import c21427252.*;
+
+// Create an instance of their main drawing class and initialise them with the instance for MyVisual
+Dima dima;
+Norbert norbert;
+Shawn shawn;
+Darren darren;
+DM_Project2 domas;
+
+dima = new Dima(this);
+norbert = new Norbert(this);
+dima = new Dima(this);
+shawn = new Shawn(this);
+darren = new Darren(this);
+domas = new DM_Project2(this);
+```
+
+Each person's code is ran through some sort of 'visual' function in their main class. This allows for reading consistency in our code.
 
 ``` Java
 // Example visual() method from Shawn's visualiser
