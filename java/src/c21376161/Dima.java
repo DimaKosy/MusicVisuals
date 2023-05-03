@@ -5,36 +5,29 @@ import processing.core.PApplet;
 import processing.core.PShape;
 
 public class Dima {
-    Wave WaveArray[];
-    int WaveAmount = 8;
-    int WaveSet = WaveAmount/2;
+    Wave WaveArray[]; // Array of wave objects
+    int WaveAmount = 8; //Amount of waves
+    int WaveSet = WaveAmount/2; //Chooses which wave to put the boats on
 
-    Boat boats[], duckBoat;
-    MyVisual mv;
+    Boat boats[], duckBoat; //the object for the boat and duck
+    MyVisual mv;    //Myvisual class
 
-    PShape duck, duck2;
-    DuckVortex vortex;
+    PShape duck, duck2; //Pshapes for loaded obj
+    DuckVortex vortex;  
     DuckCircle duckCircle;
 
     public Dima(MyVisual mv){
-        this.mv = mv;
+        this.mv = mv;   //assigns mv to local mv
 
-        int WaveHeightOffset = 50;
-        
-        //MainWave =  new Wave(this.mv, mv.width, mv.height/2, 200);
-        //Wave2 =     new Wave(this.mv, mv.width, mv.height/2 - 10, 200);
-        //Wave3 =     new Wave(this.mv, mv.width, mv.height/2 + 10, 200);
+        int WaveHeightOffset = 50;  //sets wave ofset
 
-        WaveArray = new Wave[WaveAmount];
-        for(int i = 0; i < WaveAmount; i++){
+        WaveArray = new Wave[WaveAmount];   //creates wave array
+        for(int i = 0; i < WaveAmount; i++){    //
             WaveArray[i] = new Wave(mv, mv.width, mv.height/2 - (WaveHeightOffset * (-WaveAmount/2 + i)), 200);
         }
 
-        //ship = mv.loadShape("Ship.obj");
         boats = new Boat[3];
         boats[0] = new Boat(WaveArray[WaveSet], 200, 50, 0);
-
-        //boats[0].Debug  = true;
 
         for(int i = 1; i < boats.length; i++){
             boats[i] = new Boat(WaveArray[WaveSet], 200 * (i + 1), 100, 0, boats[0].GetPShape());

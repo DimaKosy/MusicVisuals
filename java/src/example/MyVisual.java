@@ -70,7 +70,7 @@ public class MyVisual extends Visual
         calculateAverageAmplitude();        
 
         position = map(getAudioPlayer().position(), 0, getAudioPlayer().length(), 0, 100);
-        
+        //position = 70;
         background(0);
 
         if(position <= 20){
