@@ -494,6 +494,8 @@ for (int i = 0; i < numColumns; i++) {
 Overall, the thing I was most proud of is the way the individual squares stack up against one another within the column. I could've made it more complex by trying to reference MyVisual more instead of passing local instances of PApplet or Minim in several occassions; but that's part of the learning process!
 
 # How It Works
+
+## File Structure And Class Formats
 Each member created a package for themselves, inside of which we had our own code. It consists of a main drawing class (files named after ourselves) that then calls the other objects inside their package.
 
 ![Structure](images/j8.png)
